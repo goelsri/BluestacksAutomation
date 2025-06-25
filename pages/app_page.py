@@ -5,9 +5,9 @@ class AppPage(BasePage):
     DOWNLOAD_BTN = (By.CSS_SELECTOR, "a[data-v-7aa3bb54][href*='downloads']")
     HOME_ICON = (By.CSS_SELECTOR, "a.logo")
 
-    def __init__(self, driver):
+    def __init__(self, driver, config):
         super().__init__(driver)
-        self.driver.get("https://www.bluestacks.com/apps/strategy/the-walking-dead-no-mans-land-on-pc.html")
+        self.driver.get(config["base_url"]["app page"])
 
     def is_download_button_visible(self):
         return self.is_element_visible(*self.DOWNLOAD_BTN)
