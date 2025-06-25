@@ -1,0 +1,17 @@
+base_urls:
+  home: "https://www.bluestacks.com/"
+  app: "https://www.bluestacks.com/apps/strategy/the-walking-dead-no-mans-land-on-pc.html"
+  blog: "https://www.bluestacks.com/blog/games/three-kingdoms-overlord.html"
+
+browser: "chrome"
+headless: true
+implicit_wait: 10
+timeout: 30
+
+report:
+  html_path: "reports/report.html"
+  screenshots: true
+
+logging:
+  level: "INFO"
+  file: "logs/test_log.log"
